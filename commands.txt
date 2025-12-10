@@ -6,3 +6,5 @@ cd src/model
 touch MoneyAcceptor.java
 git add MoneyAcceptor.java
 git commit -m "Added interface MoneyAcceptor"
+git add src/model/CoinAcceptor.java
+git commit -m "Implement MoneyAcceptor in CoinAcceptor"
