@@ -11,13 +11,9 @@ public class CoinAcceptor implements MoneyAcceptor {
         return amount;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
     @Override
     public void deposit(int amount) {
-        this.amount = amount;
+        this.amount += amount;
     }
 
     @Override
