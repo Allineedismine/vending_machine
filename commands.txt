@@ -16,3 +16,4 @@ git commit -m "Refactored AppRunner to work with MoneyAcceptor instead of CoinAc
 git push origin home_work_25
 git add commands.txt
 git commit -m "Updated commands.txt"
+git push origin home_work_25
