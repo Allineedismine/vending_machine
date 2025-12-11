@@ -1,6 +1,6 @@
 package model;
 
-public class CoinAcceptor {
+public class CoinAcceptor implements MoneyAcceptor {
     private int amount;
 
     public CoinAcceptor(int amount) {
@@ -11,7 +11,17 @@ public class CoinAcceptor {
         return amount;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    @Override
+    public void deposit(int amount) {
+        this.amount += amount;
+    }
+
+    @Override
+    public boolean pay(int price) {
+        if(amount >= price) {
+            amount = amount - price;
+            return true;
+        }
+        return false;
     }
 }
